@@ -6,17 +6,26 @@
 	objectVersion = 77;
 	objects = {
 
+/* Begin PBXBuildFile section */
+		7C4D93F12CB3E2C6000E0CEB /* SpeechModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7C4D93E82CB3E2C6000E0CEB /* SpeechModel.swift */; };
+		7C4D93F22CB3E2C6000E0CEB /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7C4D93ED2CB3E2C6000E0CEB /* ContentView.swift */; };
+		7C4D93F32CB3E2C6000E0CEB /* Item.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7C4D93EE2CB3E2C6000E0CEB /* Item.swift */; };
+		7C4D93F42CB3E2C6000E0CEB /* SpeechTranslatorApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7C4D93EF2CB3E2C6000E0CEB /* SpeechTranslatorApp.swift */; };
+		7C4D93F52CB3E2C6000E0CEB /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 7C4D93EA2CB3E2C6000E0CEB /* Preview Assets.xcassets */; };
+		7C4D93F62CB3E2C6000E0CEB /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 7C4D93EC2CB3E2C6000E0CEB /* Assets.xcassets */; };
+		7C4D93F82CB3E307000E0CEB /* RootView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7C4D93F72CB3E307000E0CEB /* RootView.swift */; };
+/* End PBXBuildFile section */
+
 /* Begin PBXFileReference section */
 		7C4D93CD2CB3E1A1000E0CEB /* SpeechTranslator.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = SpeechTranslator.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		7C4D93E82CB3E2C6000E0CEB /* SpeechModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SpeechModel.swift; sourceTree = "<group>"; };
+		7C4D93EA2CB3E2C6000E0CEB /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
+		7C4D93EC2CB3E2C6000E0CEB /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		7C4D93ED2CB3E2C6000E0CEB /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
+		7C4D93EE2CB3E2C6000E0CEB /* Item.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Item.swift; sourceTree = "<group>"; };
+		7C4D93EF2CB3E2C6000E0CEB /* SpeechTranslatorApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SpeechTranslatorApp.swift; sourceTree = "<group>"; };
+		7C4D93F72CB3E307000E0CEB /* RootView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RootView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
-
-/* Begin PBXFileSystemSynchronizedRootGroup section */
-		7C4D93CF2CB3E1A1000E0CEB /* SpeechTranslator */ = {
-			isa = PBXFileSystemSynchronizedRootGroup;
-			path = SpeechTranslator;
-			sourceTree = "<group>";
-		};
-/* End PBXFileSystemSynchronizedRootGroup section */
 
 /* Begin PBXFrameworksBuildPhase section */
 		7C4D93CA2CB3E1A1000E0CEB /* Frameworks */ = {
@@ -32,7 +41,7 @@
 		7C4D93C42CB3E1A1000E0CEB = {
 			isa = PBXGroup;
 			children = (
-				7C4D93CF2CB3E1A1000E0CEB /* SpeechTranslator */,
+				7C4D93F02CB3E2C6000E0CEB /* SpeechTranslator */,
 				7C4D93CE2CB3E1A1000E0CEB /* Products */,
 			);
 			sourceTree = "<group>";
@@ -43,6 +52,36 @@
 				7C4D93CD2CB3E1A1000E0CEB /* SpeechTranslator.app */,
 			);
 			name = Products;
+			sourceTree = "<group>";
+		};
+		7C4D93E92CB3E2C6000E0CEB /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				7C4D93E82CB3E2C6000E0CEB /* SpeechModel.swift */,
+			);
+			path = Models;
+			sourceTree = "<group>";
+		};
+		7C4D93EB2CB3E2C6000E0CEB /* Preview Content */ = {
+			isa = PBXGroup;
+			children = (
+				7C4D93EA2CB3E2C6000E0CEB /* Preview Assets.xcassets */,
+			);
+			path = "Preview Content";
+			sourceTree = "<group>";
+		};
+		7C4D93F02CB3E2C6000E0CEB /* SpeechTranslator */ = {
+			isa = PBXGroup;
+			children = (
+				7C4D93EF2CB3E2C6000E0CEB /* SpeechTranslatorApp.swift */,
+				7C4D93ED2CB3E2C6000E0CEB /* ContentView.swift */,
+				7C4D93EE2CB3E2C6000E0CEB /* Item.swift */,
+				7C4D93F72CB3E307000E0CEB /* RootView.swift */,
+				7C4D93E92CB3E2C6000E0CEB /* Models */,
+				7C4D93EB2CB3E2C6000E0CEB /* Preview Content */,
+				7C4D93EC2CB3E2C6000E0CEB /* Assets.xcassets */,
+			);
+			path = SpeechTranslator;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -59,9 +98,6 @@
 			buildRules = (
 			);
 			dependencies = (
-			);
-			fileSystemSynchronizedGroups = (
-				7C4D93CF2CB3E1A1000E0CEB /* SpeechTranslator */,
 			);
 			name = SpeechTranslator;
 			packageProductDependencies = (
@@ -109,6 +145,8 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				7C4D93F52CB3E2C6000E0CEB /* Preview Assets.xcassets in Resources */,
+				7C4D93F62CB3E2C6000E0CEB /* Assets.xcassets in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -119,6 +157,11 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				7C4D93F12CB3E2C6000E0CEB /* SpeechModel.swift in Sources */,
+				7C4D93F22CB3E2C6000E0CEB /* ContentView.swift in Sources */,
+				7C4D93F32CB3E2C6000E0CEB /* Item.swift in Sources */,
+				7C4D93F42CB3E2C6000E0CEB /* SpeechTranslatorApp.swift in Sources */,
+				7C4D93F82CB3E307000E0CEB /* RootView.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -255,6 +298,8 @@
 				DEVELOPMENT_TEAM = 8K2MUTPRQQ;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_KEY_NSMicrophoneUsageDescription = "Audio is recorded into to capture speech before translating and displaying in the chosen language.";
+				INFOPLIST_KEY_NSSpeechRecognitionUsageDescription = "Speech data from this app will be recorded inorder to be translated and displayed.";
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
@@ -284,6 +329,8 @@
 				DEVELOPMENT_TEAM = 8K2MUTPRQQ;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_KEY_NSMicrophoneUsageDescription = "Audio is recorded into to capture speech before translating and displaying in the chosen language.";
+				INFOPLIST_KEY_NSSpeechRecognitionUsageDescription = "Speech data from this app will be recorded inorder to be translated and displayed.";
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
