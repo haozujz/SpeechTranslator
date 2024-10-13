@@ -15,7 +15,6 @@
 		7C4D93F62CB3E2C6000E0CEB /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 7C4D93EC2CB3E2C6000E0CEB /* Assets.xcassets */; };
 		7C4D93F82CB3E307000E0CEB /* RootView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7C4D93F72CB3E307000E0CEB /* RootView.swift */; };
 		7C7186892CBB63F2006C0D76 /* AvailabilityChecker.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7C7186882CBB63F2006C0D76 /* AvailabilityChecker.swift */; };
-		7C71868C2CBBBF91006C0D76 /* TranslationModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7C71868B2CBBBF91006C0D76 /* TranslationModel.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -28,7 +27,6 @@
 		7C4D93EF2CB3E2C6000E0CEB /* SpeechTranslatorApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SpeechTranslatorApp.swift; sourceTree = "<group>"; };
 		7C4D93F72CB3E307000E0CEB /* RootView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RootView.swift; sourceTree = "<group>"; };
 		7C7186882CBB63F2006C0D76 /* AvailabilityChecker.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AvailabilityChecker.swift; sourceTree = "<group>"; };
-		7C71868B2CBBBF91006C0D76 /* TranslationModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TranslationModel.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -62,7 +60,6 @@
 			isa = PBXGroup;
 			children = (
 				7C4D93E82CB3E2C6000E0CEB /* SpeechModel.swift */,
-				7C71868B2CBBBF91006C0D76 /* TranslationModel.swift */,
 			);
 			path = Models;
 			sourceTree = "<group>";
@@ -176,7 +173,6 @@
 				7C4D93F32CB3E2C6000E0CEB /* Item.swift in Sources */,
 				7C4D93F42CB3E2C6000E0CEB /* SpeechTranslatorApp.swift in Sources */,
 				7C7186892CBB63F2006C0D76 /* AvailabilityChecker.swift in Sources */,
-				7C71868C2CBBBF91006C0D76 /* TranslationModel.swift in Sources */,
 				7C4D93F82CB3E307000E0CEB /* RootView.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
