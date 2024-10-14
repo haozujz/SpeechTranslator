@@ -73,27 +73,19 @@ struct RootView: View {
         print("output")
         print(outputLanguageCode.identifier)
         
-        translationSession = TranslationSession.Configuration(
-            source: Locale.Language(identifier: "en"),
-            target: Locale.Language(identifier: "ja")
-        )
-        
         //print(translationSession as Any)//
         
+        //works
 //        translationSession = TranslationSession.Configuration(
-//            source: Locale.Language(identifier: inputLanguageCode.identifier),
-//            target: Locale.Language(identifier: outputLanguageCode.identifier)
+//            source: Locale.Language(identifier: "en"),
+//            target: Locale.Language(identifier: "ja")
 //        )
         
-//        translationSession = TranslationSession.Configuration(
-//            source: Locale.Language(languageCode: languageCode), //Locale.Language(languageCode: .english),
-//            target: Locale.Language(languageCode: .japanese)
-//        )
+        translationSession = TranslationSession.Configuration(
+            source: Locale.Language(identifier: inputLanguageCode.identifier),
+            target: Locale.Language(languageCode: .japanese)
+        )
         
-//        translationSession = TranslationSession.Configuration(
-//            source: Locale.Language(identifier: languageCode.identifier),
-//            target: Locale.Language(identifier: "ja_JP")
-//        )
     }
 
     var body: some View {
@@ -225,14 +217,14 @@ struct RootView: View {
                     
                     await checkSupportForBothSpeechAndTranslationFrameworks()
                 }
-                .onChange(of: speechRecognizer.transcript) {
-                    timer?.invalidate()  // Cancel any previous timer
-                    timer = Timer.scheduledTimer(withTimeInterval: 0.5, repeats: false) { _ in
-                        triggerTranslation()
-                    }
-                    
-                    //triggerTranslation()
-                }
+//                .onChange(of: speechRecognizer.transcript) {
+//                    timer?.invalidate()  // Cancel any previous timer
+//                    timer = Timer.scheduledTimer(withTimeInterval: 0.5, repeats: false) { _ in
+//                        triggerTranslation()
+//                    }
+//                    
+//                    //triggerTranslation()
+//                }
                 .onChange(of: selectedInputLocale) {
                     isTranslationDisabled = true
                     timer?.invalidate()

@@ -36,14 +36,6 @@ extension View {
             return false
         }
 
-//        print("input")
-//        print(inputLanguageCode.identifier)
-//        print("output")
-//        print(outputLanguageCode.identifier)
-        
-        
-//        let isPairSupported = await checkTranslationPairSupport(from: Locale.Language(identifier: "en"), to: Locale.Language(identifier: "ja")) -> true
-        
         let isPairSupported = await checkTranslationPairSupport(from: Locale.Language(identifier: inputLanguageCode.identifier), to: Locale.Language(identifier: outputLanguageCode.identifier))
 
         print(isPairSupported)
@@ -91,21 +83,7 @@ extension View {
         }
     }
 
-
-//    func getLanguageDetails(from identifier: String) -> (readableName: String?, language: Locale.Language?) {
-//        // Extract the base language code (e.g., "en" from "en-US")
-//        let baseCode = identifier.split(separator: "-").first.map(String.init) ?? identifier
-//
-//        // Get the user-friendly language name
-//        let readableName = Locale.current.localizedString(forLanguageCode: baseCode)
-//
-//        // Create a Translation-Framework-compatible Locale.Language
-//        let language = Locale.Language(languageCode: Locale.LanguageCode(baseCode))
-//
-//        return (readableName, language)
-//    }
-//
-//    
+   
     func getLanguageDescription(from identifier: String) -> String? {
         // Extract the base language code (e.g., "en" from "en-US")
         let baseCode = identifier.split(separator: "-").first.map(String.init) ?? identifier
